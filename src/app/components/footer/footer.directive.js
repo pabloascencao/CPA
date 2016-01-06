@@ -3,10 +3,10 @@
 
   angular
     .module('cpa')
-    .directive('footer', acmeNavbar);
+    .directive('footer', footer);
 
   /** @ngInject */
-  function acmeNavbar() {
+  function footer() {
     var directive = {
       restrict: 'E',
       templateUrl: 'app/components/footer/footer.html',

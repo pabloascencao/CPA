@@ -1,0 +1,12 @@
+<div class="news row">
+  <div class="news-tile col-md-4 {{tile.image ? '' : 'no-hero'}}" ng-repeat="tile in vm.news">
+    <div class="tile-hero" ng-if="tile.image !== ''">
+      <img ng-src="{{tile.image}}" alt="">
+    </div>
+    <div class="tile-content">
+      <h3>{{tile.title}}</h3>
+      <p>{{tile.description}}</p>
+      <a href="{{tile.link}}" class="view-more">Ver mas.</a>
+    </div>
+  </div>
+</div>
