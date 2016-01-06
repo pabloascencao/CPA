@@ -1,31 +1,32 @@
 .tile-wrapper{
   position: relative;
+  overflow: hidden;
   .tile-bg{
     width: 100%;
   }
   .tile-logo{
-    position: absolute;
-    top: 20%;
-    left: 15%;
     width: 300px;
-    max-width: 30%
   }
-  .tile-caption{
-    width: 30%;
+  .tile-inside{
     position: absolute;
     top: 20%;
-    right: 10%;
-    background: rgba(55,55,55,.8);
-    padding: 20px;
-    h4{
-      color: #ffffff;
-      font-size: 40px;
-      text-transform: capitalize;
-      text-shadow: 3px 3px #4c5454;
+    .tile-caption{
+      background: rgba(55,55,55,.8);
+      padding: 20px;
+      h4{
+        color: #ffffff;
+        font-size: 40px;
+        text-transform: capitalize;
+        text-shadow: 3px 3px #4c5454;
+      }
+      p{
+        font-size: 20px;
+        color: #ffffff;
+      }
     }
-    p{
-      font-size: 25px;
-      color: #ffffff;
-    }
+  }
+  &.no-image{
+    height: 667px;
+    background: #eee;
   }
 }
