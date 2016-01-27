@@ -3,17 +3,19 @@
 
   angular
     .module('cpa')
-    .config(routeConfig);
+    .config(routerConfig);
 
-  routeConfig.$inject = ['$stateProvider']
-  function routeConfig($stateProvider) {
+  /** @ngInject */
+  function routerConfig($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('cpa', {
         url: '/',
         templateUrl: 'app/main/main.html',
         controller: 'MainController',
         controllerAs: 'main'
-      })
+      });
+
+    $urlRouterProvider.otherwise('/');
   }
 
 })();

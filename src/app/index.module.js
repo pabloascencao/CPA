@@ -2,14 +2,6 @@
   'use strict';
 
   angular
-    .module('cpa', ['ngAnimate',
-                    'ngCookies',
-                    'ngTouch',
-                    'ngSanitize',
-                    'ngResource',
-                    'ngRoute',
-                    'ui.bootstrap',
-                    'ui.router',
-                    'toastr']);
+    .module('cpa', ['ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngResource', 'ui.router', 'ngMaterial', 'toastr']);
 
 })();

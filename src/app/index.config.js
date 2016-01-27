@@ -6,7 +6,10 @@
     .config(config);
 
   /** @ngInject */
-  function config($logProvider, toastrConfig) {
+  function config($logProvider, toastrConfig, $mdThemingProvider) {
+    $mdThemingProvider.theme('default')
+          .primaryPalette('red');
+
     // Enable log
     $logProvider.debugEnabled(true);
 
