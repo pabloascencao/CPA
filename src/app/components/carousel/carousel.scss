@@ -1,6 +1,7 @@
 .tile-wrapper{
   position: relative;
   overflow: hidden;
+  margin-bottom: -5px;
   .tile-bg{
     width: 100%;
   }
@@ -10,9 +11,14 @@
   .tile-inside{
     position: absolute;
     top: 20%;
+    width: 80%;
+    right: 10%;
+    left: 10%;
     .tile-caption{
       background: rgba(55,55,55,.8);
       padding: 20px;
+      width: 50%;
+      float: right;
       h4{
         color: #ffffff;
         font-size: 40px;

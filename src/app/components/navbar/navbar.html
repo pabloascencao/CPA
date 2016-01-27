@@ -1,11 +1,22 @@
-<md-toolbar layout="row" layout-align="center center">
+<md-toolbar layout="row" layout-align="center left">
 
-  <md-button href="https://github.com/Swiip/generator-gulp-angular">Crear Para Alcanzar</md-button>
+  <md-button ui-href="cpa">Crear Para Alcanzar</md-button>
 
   <section flex layout="row" layout-align="left center">
-    <md-button href="#" class="md-raised">Home</md-button>
+    <!--<md-button href="#" class="md-raised">Projectos</md-button>
     <md-button href="#" class="md-raised">About</md-button>
-    <md-button href="#" class="md-raised">Contact</md-button>
+    <md-button href="#" class="md-raised">Contact</md-button>-->
+
+    <md-menu md-offset="0 -7">
+      <md-button aria-label="testing" class="md-raised" ng-click="$mdOpenMenu($event)">
+        Projectos
+      </md-button>
+      <md-menu-content width="4">
+        <md-menu-item ng-repeat="item in ['Olimpiadas Biblicas Nacionales','Olimpiadas Biblicas Extremas','La Gran Final']">
+          <md-button ng-click="ctrl.announceClick($index)"> <span md-menu-align-target>Option</span> {{item}} </md-button>
+        </md-menu-item>
+      </md-menu-content>
+    </md-menu>
   </section>
 
 </md-toolbar>
