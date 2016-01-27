@@ -1,0 +1,50 @@
+footer{
+  //  background: #2a2e31
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b5bdc8+0,707f84+5,2a2e31+10 */
+  background: #b5bdc8; /* Old browsers */
+  background: -moz-linear-gradient(top,  #b5bdc8 0%, #707f84 5%, #2a2e31 10%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #b5bdc8 0%,#707f84 5%,#2a2e31 10%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #b5bdc8 0%,#707f84 5%,#2a2e31 10%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#2a2e31',GradientType=0 ); /* IE6-9 */
+
+  overflow: hidden;
+  padding: 20px;
+  box-sizing: border-box;
+  ul{
+    li{
+      color: #dddddd;
+      list-style: none;
+      h4{}
+      a,a:visited,a:hover{
+        color: #ce5d4b;
+      }
+    }
+    &.social{
+      li:not(.title){
+        float: left;
+        margin: 0 5px 5px 0;
+
+      }
+      a{
+        background: url('/assets/images/social-stickers-small.png') no-repeat transparent;
+        text-indent: -1000000px;
+        display: block;
+        height: 22px;
+        width: 22px;
+        &.facebook{  background-position: 0 0;}
+        &.linkedin{  background-position: -23px 0;}
+        &.googlePlus{background-position: -46px 0;}
+        &.twitter{   background-position: -68px 0;}
+        &.youtube{   background-position: 0 -23px;}
+        &.instagram{ background-position: -23px -23px;}
+        &.pinterest{ background-position: -46px -23px;}
+      }
+    }
+  }
+  .copyright{
+    color: #888888;
+    p{
+      text-align: center;
+    }
+  }
+}
