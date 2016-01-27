@@ -3,10 +3,10 @@
 
   angular
     .module('cpa')
-    .directive('navbar', acmeNavbar);
+    .directive('navbar', navbar);
 
   /** @ngInject */
-  function acmeNavbar() {
+  function navbar() {
     var directive = {
       restrict: 'E',
       templateUrl: 'app/components/navbar/navbar.html',
@@ -21,10 +21,9 @@
     return directive;
 
     /** @ngInject */
-    function NavbarController(moment) {
+    function NavbarController() {
       var vm = this;
 
-      // "vm.creation" is avaible by directive option "bindToController: true"
     }
   }
 

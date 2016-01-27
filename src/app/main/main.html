@@ -1,7 +1,34 @@
-<navbar></navbar>
+<div layout="vertical" layout-fill>
 
-<div class="">
-  <cpa-carousel class="" section="cpaMain"></cpa-carousel>
-  <cpa-carousel class=""></cpa-carousel>
+  <md-content layout-fill>
+    <header>
+      <navbar creation-date="main.creationDate"></navbar>
+    </header>
 
+    <section class="index-hero">
+      <h1>
+        <img src="assets/images/logocpa-small.png" width="150px" alt="Crear Para Alcanzar"><br>
+        <img src="assets/images/textocrearpa.png" alt="Crear Para Alcanzar"><br>
+      </h1>
+      <h2>
+        Llevando la Juventud a su presencia.
+      </h2>
+    </section>
+
+  </md-content>
 </div>
+<cpa-carousel section="cpaMain"></cpa-carousel>
+<div class="news" layout-align="center">
+  <h2>Novedades</h2>
+  <md-card ng-repeat="news in main.newses | orderBy:'date'">
+    <md-card-content>
+      <img class="pull-right" ng-src="assets/images/{{ news.logo }}" alt="{{ news.title }}">
+      <h3 class="md-title">{{ news.title }}</h3>
+      <p>{{ news.description }}</p>
+    </md-card-content>
+    <div class="md-action-buttons">
+      <md-button ng-href="{{ news.url }}">Ver mas</md-button>
+    </div>
+  </md-card>
+</div>
+<cpa-carousel ></cpa-carousel>
