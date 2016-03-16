@@ -11,12 +11,18 @@ footer{
   padding: 20px;
   box-sizing: border-box;
   ul{
+    margin: 0 auto;
     li{
       color: #dddddd;
       list-style: none;
       h4{}
       a,a:visited,a:hover{
+        text-decoration: none;
         color: #ce5d4b;
+      }
+      a:hover{
+        text-decoration: underline;
+
       }
     }
     &.social{

@@ -32,7 +32,16 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
   text-align: center;
   color: white;
 }
+h1{
+  width: 1024px;
+  margin: 20px auto;
+  overflow: hidden;
+  img{
+     float: left;
+     margin-right: 30px;
+   };
 
+}
 /**
  *  Do not remove the comments below. It's the markers used by gulp-inject to inject
  *  all your sass files automatically
