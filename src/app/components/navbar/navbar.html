@@ -1,22 +1,55 @@
-<md-toolbar layout="row" layout-align="center left">
+<md-toolbar layout="row" layout-align="center left" class="navbar">
 
-  <md-button ui-href="cpa">Crear Para Alcanzar</md-button>
 
-  <section flex layout="row" layout-align="left center">
+  <section flex layout="row" layout-align="center center">
     <!--<md-button href="#" class="md-raised">Projectos</md-button>
     <md-button href="#" class="md-raised">About</md-button>
     <md-button href="#" class="md-raised">Contact</md-button>-->
 
-    <md-menu md-offset="0 -7">
-      <md-button aria-label="testing" class="md-raised" ng-click="$mdOpenMenu($event)">
-        Projectos
+    <md-menu >
+      <md-button class="md-raised" ng-click="$mdOpenMenu($event)">
+        {{vm.obPre.name}}
       </md-button>
       <md-menu-content width="4">
-        <md-menu-item ng-repeat="item in ['Olimpiadas Biblicas Nacionales','Olimpiadas Biblicas Extremas','La Gran Final']">
-          <md-button ng-click="ctrl.announceClick($index)"> <span md-menu-align-target>Option</span> {{item}} </md-button>
+        <md-menu-item class="menu-header">
+          <img src="{{vm.obPre.logoImg}}" ng-show="vm.obPre.logoImg" alt="ob">
+          <p class="menu-title" ng-class="{md: vm.obPre.logoImg , lg: !vm.obPre.logoImg}">{{vm.obPre.fullName}}</p>
+        </md-menu-item>
+        <md-menu-item ng-repeat="item in vm.obPre.items">
+          <md-button ng-click="ctrl.announceClick($index)">{{item.name}}</md-button>
         </md-menu-item>
       </md-menu-content>
     </md-menu>
+    <md-menu >
+      <md-button class="md-raised" ng-click="$mdOpenMenu($event)">
+        {{vm.obExt.name}}
+      </md-button>
+      <md-menu-content width="4">
+        <md-menu-item class="menu-header">
+          <img src="{{vm.obExt.logoImg}}" ng-show="vm.obExt.logoImg" alt="ob">
+          <p class="menu-title" ng-class="{md: vm.obExt.logoImg , lg: !vm.obExt.logoImg}">{{vm.obExt.fullName}}</p>
+        </md-menu-item>
+        <md-menu-item ng-repeat="item in vm.obExt.items">
+          <md-button ng-click="ctrl.announceClick($index)">{{item.name}}</md-button>
+        </md-menu-item>
+      </md-menu-content>
+    </md-menu>
+    <md-button class="md-raised" ng-click="$mdOpenMenu($event)">
+      {{vm.lgf.name}}
+    </md-button>
+    <md-button class="md-raised" ng-click="$mdOpenMenu($event)">
+      {{vm.cpa.name}}
+    </md-button>
+    <md-button class="md-raised" ng-click="$mdOpenMenu($event)">
+      {{vm.ma.name}}
+    </md-button>
+    <md-button class="md-raised" ng-click="$mdOpenMenu($event)">
+      {{vm.news.name}}
+    </md-button>
+    <md-button class="md-icon-button md-raised cart" ng-click="$mdOpenMenu($event)">
+      <i class="fa fa-shopping-cart"></i>
+    </md-button>
   </section>
+
 
 </md-toolbar>
