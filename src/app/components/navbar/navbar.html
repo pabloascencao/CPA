@@ -5,46 +5,45 @@
     <!--<md-button href="#" class="md-raised">Projectos</md-button>
     <md-button href="#" class="md-raised">About</md-button>
     <md-button href="#" class="md-raised">Contact</md-button>-->
-<a href="" ng-click="vm.addMessage"> add message</a>
     <md-menu >
       <md-button class="md-raised" ng-click="$mdOpenMenu($event)">
-        {{vm.obPre.name}}
+        {{vm.navbarContent.obPre.name}}
       </md-button>
       <md-menu-content width="4">
         <md-menu-item class="menu-header">
-          <img src="{{vm.obPre.logoImg}}" ng-show="vm.obPre.logoImg" alt="ob">
-          <p class="menu-title" ng-class="{md: vm.obPre.logoImg , lg: !vm.obPre.logoImg}">{{vm.obPre.fullName}}</p>
+          <img src="{{vm.navbarContent.obPre.logoImg}}" ng-show="vm.navbarContent.obPre.logoImg" alt="ob">
+          <p class="menu-title" ng-class="{md: vm.navbarContent.obPre.logoImg , lg: !vm.navbarContent.obPre.logoImg}">{{vm.navbarContent.obPre.fullName}}</p>
         </md-menu-item>
-        <md-menu-item ng-repeat="item in vm.obPre.items">
+        <md-menu-item ng-repeat="item in vm.navbarContent.obPre.items">
           <md-button ng-click="ctrl.announceClick($index)">{{item.name}}</md-button>
         </md-menu-item>
       </md-menu-content>
     </md-menu>
     <md-menu >
       <md-button class="md-raised" ng-click="$mdOpenMenu($event)">
-        {{vm.obExt.name}}
+        {{vm.navbarContent.obExt.name}}
       </md-button>
       <md-menu-content width="4">
         <md-menu-item class="menu-header">
-          <img src="{{vm.obExt.logoImg}}" ng-show="vm.obExt.logoImg" alt="ob">
-          <p class="menu-title" ng-class="{md: vm.obExt.logoImg , lg: !vm.obExt.logoImg}">{{vm.obExt.fullName}}</p>
+          <img src="{{vm.navbarContent.obExt.logoImg}}" ng-show="vm.navbarContent.obExt.logoImg" alt="ob">
+          <p class="menu-title" ng-class="{md: vm.navbarContent.obExt.logoImg , lg: !vm.navbarContent.obExt.logoImg}">{{vm.navbarContent.obExt.fullName}}</p>
         </md-menu-item>
-        <md-menu-item ng-repeat="item in vm.obExt.items">
+        <md-menu-item ng-repeat="item in vm.navbarContent.obExt.items">
           <md-button ng-click="ctrl.announceClick($index)">{{item.name}}</md-button>
         </md-menu-item>
       </md-menu-content>
     </md-menu>
     <md-button class="md-raised" ng-click="$mdOpenMenu($event)">
-      {{vm.lgf.name}}
+      {{vm.navbarContent.lgf.name}}
     </md-button>
     <md-button class="md-raised" ng-click="$mdOpenMenu($event)">
-      {{vm.cpa.name}}
+      {{vm.navbarContent.cpa.name}}
     </md-button>
     <md-button class="md-raised" ng-click="$mdOpenMenu($event)">
-      {{vm.ma.name}}
+      {{vm.navbarContent.ma.name}}
     </md-button>
     <md-button class="md-raised" ng-click="$mdOpenMenu($event)">
-      {{vm.news.name}}
+      {{vm.navbarContent.news.name}}
     </md-button>
     <md-button class="md-icon-button md-raised cart" ng-click="$mdOpenMenu($event)">
       <i class="fa fa-shopping-cart"></i>
