@@ -16,7 +16,7 @@
           <p class="menu-title" ng-class="{md: vm.obPre.logoImg , lg: !vm.obPre.logoImg}">{{vm.obPre.fullName}}</p>
         </md-menu-item>
         <md-menu-item ng-repeat="item in vm.obPre.items">
-          <md-button ng-click="ctrl.announceClick($index)">{{item.name}}</md-button>
+          <md-link ui-sref="{{item.link}}">{{item.name}}</md-link>
         </md-menu-item>
       </md-menu-content>
     </md-menu>

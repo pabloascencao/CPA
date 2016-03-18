@@ -32,12 +32,12 @@
         fullName: 'Olimpiadas Biblicas preadolescentes',
         logoImg: '/assets/images/logoOB-small.png',
         items: [
-          {name:'Vision',link: ''},
-          {name:'Como Participar?',link: ''},
-          {name:'Zonas Habilitadas',link: ''},
-          {name:'Trabajo Internacional',link: ''},
-          {name:'Suma tu zona',link: ''},
-          {name:'Descargas',link: ''}
+          {name:'Vision',link: 'cpa.vision.obPre'},
+          {name:'Como Participar?',link: 'cpa'},
+          {name:'Zonas Habilitadas',link: 'cpa'},
+          {name:'Trabajo Internacional',link: 'cpa'},
+          {name:'Suma tu zona',link: 'cpa'},
+          {name:'Descargas',link: 'cpa'}
         ]
       }
       vm.obExt = {
@@ -45,16 +45,16 @@
         fullName: 'Olimpiadas Biblicas Extremas',
         logoImg: '/assets/images/logoObExt-small.jpg',
         items: [
-          {name:'Vision',link: ''},
-          {name:'Como Participar?',link: ''},
-          {name:'Descargas',link: ''}
+          {name:'Vision',link: 'cpa'},
+          {name:'Como Participar?',link: 'cpa'},
+          {name:'Descargas',link: 'cpa'}
         ]
       }
-      vm.lgf = {name: "La Gran final", link:''}
-      vm.cart = {name: "Carrito", link:''}
-      vm.cpa = {name: "Vision de CPA", link:''}
-      vm.ma = {name: "Ministerios asociados", link:''}
-      vm.news = {name: "Novedades", link:''}
+      vm.lgf = {name: "La Gran final", link:'cpa'}
+      vm.cart = {name: "Carrito", link:'cpa'}
+      vm.cpa = {name: "Vision de CPA", link:'cpa'}
+      vm.ma = {name: "Ministerios asociados", link:'cpa'}
+      vm.news = {name: "Novedades", link:'cpa'}
       /////////////////////////////7
        function addMessage() {
         vm.navbarContent.$add({
@@ -63,12 +63,12 @@
               fullName: 'Olimpiadas Biblicas preadolescentes',
               logoImg: '/assets/images/logoOB-small.png',
               items: [
-                {name:'Vision',link: ''},
-                {name:'Como Participar?',link: ''},
-                {name:'Zonas Habilitadas',link: ''},
-                {name:'Trabajo Internacional',link: ''},
-                {name:'Suma tu zona',link: ''},
-                {name:'Descargas',link: ''}
+                {name:'Vision',link: 'cpa'},
+                {name:'Como Participar?',link: 'cpa'},
+                {name:'Zonas Habilitadas',link: 'cpa'},
+                {name:'Trabajo Internacional',link: 'cpa'},
+                {name:'Suma tu zona',link: 'cpa'},
+                {name:'Descargas',link: 'cpa'}
               ]
             },
             obExt:{
@@ -76,16 +76,16 @@
               fullName: 'Olimpiadas Biblicas Extremas',
               logoImg: '/assets/images/logoObExt-small.jpg',
               items: [
-                {name:'Vision',link: ''},
-                {name:'Como Participar?',link: ''},
-                {name:'Descargas',link: ''}
+                {name:'Vision',link: 'cpa'},
+                {name:'Como Participar?',link: 'cpa'},
+                {name:'Descargas',link: 'cpa'}
               ]
             },
-            lgf: {name: "La Gran final", link:''},
-            cart: {name: "Carrito", link:''},
-            cpa: {name: "Vision de CPA", link:''},
-            ma: {name: "Ministerios asociados", link:''},
-            news: {name: "Novedades", link:''}
+            lgf: {name: "La Gran final", link:'cpa'},
+            cart: {name: "Carrito", link:'cpa'},
+            cpa: {name: "Vision de CPA", link:'cpa'},
+            ma: {name: "Ministerios asociados", link:'cpa'},
+            news: {name: "Novedades", link:'cpa'}
           });
         };
     }
