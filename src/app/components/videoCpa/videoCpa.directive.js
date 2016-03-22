@@ -32,7 +32,7 @@
       $window.onYouTubeIframeAPIReady = function() {
         player = new YT.Player(element.children()[0], {
           width: '100%',
-          videoId: attrs.videoId
+          videoId: attrs.videoid
         });
       };
     }
