@@ -12,6 +12,7 @@
       'ui.router',
       'ngMaterial',
       'toastr',
+      'cpa.vision',
       'firebase'
     ]);
 

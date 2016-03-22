@@ -25,7 +25,6 @@
           fb = new Firebase(firebaseURL + '/navbar');
       vm.navbarContent = $firebaseObject(fb);
 
-      
     }
   }
 
