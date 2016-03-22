@@ -5,7 +5,6 @@
     .module('cpa')
     .directive('navbar', navbar);
 
-  /** @ngInject */
   function navbar() {
     var directive = {
       restrict: 'E',
@@ -20,10 +19,13 @@
 
     return directive;
 
-    /** @ngInject */
-    function NavbarController() {
-      var vm = this;
+    NavbarController.$inject = ['$firebaseObject','firebaseURL'];
+    function NavbarController($firebaseObject, firebaseURL) {
+      var vm = this,
+          fb = new Firebase(firebaseURL + '/navbar');
+      vm.navbarContent = $firebaseObject(fb);
 
+      
     }
   }
 
