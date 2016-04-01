@@ -29,17 +29,17 @@
           <p class="menu-title" ng-class="{md: vm.navbarContent.obExt.logoImg , lg: !vm.navbarContent.obExt.logoImg}">{{vm.navbarContent.obExt.fullName}}</p>
         </md-menu-item>
         <md-menu-item ng-repeat="item in vm.navbarContent.obExt.items">
-          <md-button ng-click="ctrl.announceClick($index)">{{item.name}}</md-button>
+          <md-button ui-sref="{{item.link}}" ng-click="ctrl.announceClick($index)">{{item.name}}</md-button>
         </md-menu-item>
       </md-menu-content>
     </md-menu>
     <md-button class="md-raised" ng-click="$mdOpenMenu($event)">
       {{vm.navbarContent.lgf.name}}
     </md-button>
-    <md-button class="md-raised" ng-click="$mdOpenMenu($event)">
+    <md-button class="md-raised" ng-if="vm.navbarContent.cpa.link" ui-sref="{{vm.navbarContent.cpa.link}}" >
       {{vm.navbarContent.cpa.name}}
     </md-button>
-    <md-button class="md-raised" ng-click="$mdOpenMenu($event)">
+    <md-button class="md-raised" ng-if="vm.navbarContent.ma.link" ui-sref="{{vm.navbarContent.ma.link}}">
       {{vm.navbarContent.ma.name}}
     </md-button>
     <md-button class="md-raised" ng-click="$mdOpenMenu($event)">

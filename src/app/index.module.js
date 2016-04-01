@@ -13,6 +13,7 @@
       'ngMaterial',
       'toastr',
       'cpa.vision',
+      'cpa.ministerios',
       'firebase'
     ]);
 

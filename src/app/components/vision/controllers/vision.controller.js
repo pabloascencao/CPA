@@ -5,11 +5,18 @@
     .module('cpa.vision')
     .controller('VisionController', VisionController);
 
-    VisionController.$inject = ['$firebaseObject','firebaseURL'];
-    function VisionController($firebaseObject, firebaseURL) {
+    VisionController.$inject = ['content','$http','$stateParams'];
+    function VisionController(content, $http, $stateParams) {
       var vm = this;
-      /////////////////////////////7
 
+          vm.proyects = content;
+          vm.extraMenu = false;
+          vm.extraTemplate = '';
+
+      /////////////////////////////
+      /*$http.get(vm.extraTemplate).then(function(data){
+        console.log(data);
+      })*/
     }
 
 })();
