@@ -5,11 +5,14 @@
     .module('cpa')
     .controller('MainController', MainController);
 
-  /** @ngInject */
-  function MainController($timeout, toastr) {
+  MainController.$inject = ['$timeout','$firebaseObject','firebaseURL']
+  function MainController($timeout, $firebaseObject, firebaseURL) {
     var vm = this;
 
-    vm.newses = getNews();
+    var news = new Firebase(firebaseURL + '/news');
+    vm.newses = $firebaseObject(news);
+
+    //vm.newses = getNews();
     vm.classAnimation = '';
     vm.creationDate = 1453858300259;
     vm.ma = getMa();
@@ -59,7 +62,7 @@
         title: 'LAPEN',
         description: 'No podriamos ser quien somos si LAPEN no hubiera estado desde nuestros comienzos.',
         url: 'http://www.google.com/'
-      }]; 
+      }];
     }
     function showToastr() {
       toastr.info('Fork <a href="https://github.com/Swiip/generator-gulp-angular" target="_blank"><b>generator-gulp-angular</b></a>');

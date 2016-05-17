@@ -18,14 +18,13 @@
     };
 
     return directive;
+  }
+  NavbarController.$inject = ['$firebaseObject','firebaseURL'];
+  function NavbarController($firebaseObject, firebaseURL) {
+    var vm = this,
+    fb = new Firebase(firebaseURL + '/navbar');
+    vm.navbarContent = $firebaseObject(fb);
 
-    NavbarController.$inject = ['$firebaseObject','firebaseURL'];
-    function NavbarController($firebaseObject, firebaseURL) {
-      var vm = this,
-          fb = new Firebase(firebaseURL + '/navbar');
-      vm.navbarContent = $firebaseObject(fb);
-
-    }
   }
 
 })();
