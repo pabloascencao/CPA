@@ -20,7 +20,7 @@
 
     return directive;
 
-    /** @ngInject */
+    NewsController.$inject = [];
     function NewsController() {
       var vm = this;
       vm.news = getNews();

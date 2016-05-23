@@ -14,7 +14,7 @@
       </md-button>
       <md-menu-content width="4">
         <md-menu-item class="menu-header">
-          <img src="{{vm.navbarContent.obPre.logoImg}}" ng-show="vm.navbarContent.obPre.logoImg" alt="ob">
+          <img ng-src="{{vm.navbarContent.obPre.logoImg}}" ng-show="vm.navbarContent.obPre.logoImg" alt="ob">
           <p class="menu-title" ng-class="{md: vm.navbarContent.obPre.logoImg , lg: !vm.navbarContent.obPre.logoImg}">{{vm.navbarContent.obPre.fullName}}</p>
         </md-menu-item>
         <md-menu-item ng-repeat="item in vm.navbarContent.obPre.items">
@@ -28,7 +28,7 @@
       </md-button>
       <md-menu-content width="4">
         <md-menu-item class="menu-header">
-          <img src="{{vm.navbarContent.obExt.logoImg}}" ng-show="vm.navbarContent.obExt.logoImg" alt="ob">
+          <img ng-src="{{vm.navbarContent.obExt.logoImg}}" ng-show="vm.navbarContent.obExt.logoImg" alt="ob">
           <p class="menu-title" ng-class="{md: vm.navbarContent.obExt.logoImg , lg: !vm.navbarContent.obExt.logoImg}">{{vm.navbarContent.obExt.fullName}}</p>
         </md-menu-item>
         <md-menu-item ng-repeat="item in vm.navbarContent.obExt.items">

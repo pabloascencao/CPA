@@ -1,15 +1,14 @@
-<div class="container">
+<div class="container ministerios">
 	<h2>Ministerios asociados</h2>
-	<md-card ng-repeat="ma in vm.ma">
-		<md-card-content>
-		<a ng-href="{{ ma.url }}">
-		  <img class="pull-right" ng-src="{{ ma.logo }}" alt="{{ ma.title }}">
-		  <h3 class="md-title">{{ ma.title }}</h3>
-		</a>
-		  <p>{{ ma.description }}</p>
-		</md-card-content>
-		<div class="md-action-buttons">
-		  <md-button ng-href="">Ver mas</md-button>
-		</div>
-	</md-card>
+	<div class="row">
+		<md-card class="col-md-4 card-wrapper" ng-repeat="ma in vm.ma">
+			<md-card-content>
+				<a ng-href="{{ ma.url }}">
+				  <img class="pull-left"  ng-src="{{ ma.logo }}" alt="{{ ma.title }}">
+				  <h3 class="md-title">{{ ma.title }}</h3>
+				</a>
+			  	<p>{{ ma.description }}</p>
+			</md-card-content>
+		</md-card>
+	</div>
 </div>

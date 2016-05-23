@@ -1,0 +1,21 @@
+.container.ministerios{
+	width: 960px;
+	h2{
+		text-align: center;
+	}
+	> div{
+		width: 960px;
+	}
+	.card-wrapper{
+		margin-left: 4px;
+		margin-right: 4px;
+		width: 32%;
+		a{
+			display: block;
+			img{
+				width: 65px; 
+				margin-right: 15px;
+			}
+		}
+	}
+}

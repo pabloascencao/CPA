@@ -9,10 +9,6 @@
 	function MinisteriosController($firebaseObject,firebaseURL){
 		var vm = this,
 			fb = new Firebase(firebaseURL + '/ministerios');
-
-      	vm.ma = $firebaseObject(fb);
-      	console.log(vm.ministerios)
-
-
+			vm.ma = $firebaseObject(fb);
 	}
-})(angular)
+})(angular);

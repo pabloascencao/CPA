@@ -5,7 +5,7 @@
     .module('cpa')
     .config(routerConfig);
 
-  /** @ngInject */
+  routerConfig.$inject = ['$stateProvider', '$urlRouterProvider']
   function routerConfig($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('cpa', {
