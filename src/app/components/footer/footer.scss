@@ -37,6 +37,11 @@ footer{
         display: block;
         height: 22px;
         width: 22px;
+        &.medium{
+          background: url('/assets/images/social-stickers-medium.png') no-repeat transparent;
+          height: 44px;
+          width: 44px;
+        }
         &.facebook{  background-position: 0 0;}
         &.linkedin{  background-position: -23px 0;}
         &.googlePlus{background-position: -46px 0;}

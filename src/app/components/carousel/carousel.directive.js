@@ -21,31 +21,20 @@
 
     return directive;
   }
-  cpaCarouselCtrl.$inject = ['$scope'];
-  function cpaCarouselCtrl($scope) {
+  cpaCarouselCtrl.$inject = ['$scope', '$firebaseObject','firebaseURL']
+  function cpaCarouselCtrl($scope,$firebaseObject, firebaseURL) {
     var vm = this;
-    vm.slides = getSlides();
+    var fb = new Firebase(firebaseURL + '/banners/'+$scope.proy);
     vm.interval = 3000;
     vm.noWrapSlides = false;
+    vm.slides = $firebaseObject(fb);
+
     function getSlides(){
-      if ($scope.proy === 'cpaMain'){
-        return {img:'assets/images/ob_team.jpg',
-                logoImg:'assets/images/logoOB-small.png',
-                title:'Olimpiadas Biblicas',
-                text:'Este es un evento que se realiza todos los años en 8 diferentes zonas en la cual la idea es que los preadolescentes aprendan de la palaba de Dios'
-              };
-      }else {
-        return {
-          img:'',
-          logoImg:'assets/images/logoObExt-big.png',
-          title:'La Gran Final',
-          text:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-        };
-      }
+
     }
-    /**/
-    // "vm.creation" is avaible by directive option "bindToController: true"
   }
+  /**/
+  // "vm.creation" is avaible by directive option "bindToController: true"
 
 
 })();

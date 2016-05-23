@@ -8,6 +8,9 @@
     <md-button ui-sref="cpa" class="md-icon-button md-raised cart" ng-click="$mdOpenMenu($event)">
       <i class="fa fa-home"></i>
     </md-button>
+    <md-button class="md-raised" ng-if="vm.navbarContent.cpa.link" ui-sref="{{vm.navbarContent.cpa.link}}" >
+      {{vm.navbarContent.cpa.name}}
+    </md-button>
     <md-menu >
       <md-button class="md-raised" ng-click="$mdOpenMenu($event)">
         {{vm.navbarContent.obPre.name}}
@@ -39,14 +42,14 @@
     <md-button class="md-raised" ng-click="$mdOpenMenu($event)">
       {{vm.navbarContent.lgf.name}}
     </md-button>
-    <md-button class="md-raised" ng-if="vm.navbarContent.cpa.link" ui-sref="{{vm.navbarContent.cpa.link}}" >
-      {{vm.navbarContent.cpa.name}}
-    </md-button>
     <md-button class="md-raised" ng-if="vm.navbarContent.ma.link" ui-sref="{{vm.navbarContent.ma.link}}">
       {{vm.navbarContent.ma.name}}
     </md-button>
     <md-button class="md-raised" ng-click="$mdOpenMenu($event)">
       {{vm.navbarContent.news.name}}
+    </md-button>
+    <md-button class="md-raised" ng-if="vm.navbarContent.berdor.link" href="{{vm.navbarContent.berdor.link}}">
+      {{vm.navbarContent.berdor.name}}
     </md-button>
     <md-button ng-if="vm.navbarContent.cart" class="md-icon-button md-raised cart" ng-click="$mdOpenMenu($event)">
       <i class="fa fa-shopping-cart"></i>

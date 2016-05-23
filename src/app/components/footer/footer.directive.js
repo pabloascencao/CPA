@@ -5,7 +5,7 @@
     .module('cpa')
     .directive('footer', footer);
 
-  /** @ngInject */
+  footer.$inject = [];
   function footer() {
     var directive = {
       restrict: 'E',
@@ -19,13 +19,12 @@
     };
 
     return directive;
-
-    FooterController.$inject = [];
-    function FooterController() {
-      var vm = this;
-
-      // "vm.creation" is avaible by directive option "bindToController: true"
-    }
+  }
+  FooterController.$inject = ['$firebaseObject','firebaseURL']
+  function FooterController($firebaseObject, firebaseURL) {
+    var vm = this;
+    var social = new Firebase(firebaseURL + '/social');
+    vm.socialLinks = $firebaseObject(social);
   }
 
 })();

@@ -1,9 +1,9 @@
 <section class="index-hero">
   <h2>
-    Llevando la Juventud a su presencia.
+    Llevando esta generacion a su presencia.
   </h2>
 </section>
-<cpa-carousel section="cpaMain"></cpa-carousel>
+<cpa-carousel section="ob"></cpa-carousel>
 <div class="news" layout-align="center">
   <h2>Novedades</h2>
   <md-card ng-repeat="news in main.newses | orderBy:'date'">
@@ -13,11 +13,11 @@
       <p>{{ news.description }}</p>
     </md-card-content>
     <div class="md-action-buttons">
-      <md-button ng-href="{{ news.url }}">Ver mas</md-button>
+      <md-button ui-sref="{{ news.url }}">Ver mas</md-button>
     </div>
   </md-card>
 </div>
-<cpa-carousel ></cpa-carousel>
+<cpa-carousel section="lgf"></cpa-carousel>
 <div class="news" layout-align="center">
   <h2>Ministerios Asociados</h2>
   <md-card ng-repeat="ma in main.ma | orderBy:'date'">
@@ -28,8 +28,8 @@
     </a>
       <p>{{ ma.description }}</p>
     </md-card-content>
-    <div class="md-action-buttons">
+    <!--<div class="md-action-buttons">
       <md-button ng-href="">Ver mas</md-button>
-    </div>
+    </div>-->
   </md-card>
 </div>
