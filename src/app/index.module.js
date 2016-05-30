@@ -14,6 +14,7 @@
       'toastr',
       'cpa.vision',
       'cpa.ministerios',
+      'cpa.bePart',
       'firebase'
     ]);
 

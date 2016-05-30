@@ -16,7 +16,7 @@
         url: '/:proy',
         views:{
           '@':{
-            templateUrl: '/app/components/vision/views/description.html',
+            templateUrl: 'app/components/vision/views/description.html',
             controller: 'VisionController',
             controllerAs: 'vm',
             resolve:{
