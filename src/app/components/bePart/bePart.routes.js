@@ -22,6 +22,16 @@
         }
       }
     })
+    .state('cpa.bePart.obX',{
+      url: 'obX',
+      views:{
+        '@':{
+          templateUrl: 'app/components/bePart/views/obX.html',
+          controller: 'BePartController',
+          controllerAs: 'vm'
+        }
+      }
+    })
     .state('cpa.bePart.join',{
       url: 'unite',
       views:{

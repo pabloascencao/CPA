@@ -26,8 +26,17 @@
 
 <div class="well">
   <h3>NUESTRA HISTORIA</h3>
-  <p>Hace poco más de 7 años Sandra Lanza  y Carolina Biancardi comenzaron a soñar en despertar una generación diferente y desafiados a ser luz en medio de tanta oscuridad. Así nace Olimpiadas Bíblicas como proyecto de incentivación y motivación a traves del juego, y  que de la mano con Editorial Berdor, ambos se fusionaron para dar una nueva herramienta a maestros, padres, niños y jóvenes.</p>
+  <p>En el año 2007 comenzamos a trabajar arduamente, para traer un despertar de una generación diferente y desafiada a ser luz en medio de tanta oscuridad. Así nace Olimpiadas Bíblicas como primer proyecto de incentivación y motivación atraves del juego, y  que de la mano con Editorial Berdor, ambos se fusionaron para dar una nueva herramienta a maestros, padres, niños y jóvenes.</p>
   <p>Poco a poco se fueron sumando jóvenes voluntarios, que con un corazón de servicio y pasión comenzaron a sumarse en esfuerzo, tiempo, recursos y pasión.</p>
-  <p>Hoy, contamos personas de todo el país y fuera del país que se suman a la visión de CPA.</p>
-  <p>Contamos con una <strong>comisión nacional</strong> que analiza, direcciona y organiza cada propuesta y área de la ong, un <strong>cuerpo creativo</strong> compuesto por jóvenes emprendedores y profesionales que trabajan  arduamente para pensar, desarrollar y gestionar cada proyecto y propuesta que se aprueba, Encargados de zonas: que son los encargados de llevar adelante los proyectos en sus zonas y difundir la labor. <strong>Voluntarios a nivel nacional e internacional</strong>, que se suman a la visión poniendo manos a la obra , <strong>Ministerios asociados</strong> que se suman y comprometen aunando  fuerzas para alcanzar los proyectos al cual se adhieren , <strong>Ofrendantes y donantes</strong> que suman recursos para hacer posible alcanzar cada meta propuesta.</p>
+  <p>Hoy, contamos personas de todo el país y fuera del país que se suman a la visión de CPA ong, dio forma, orden y gran empuje a todos los proyectos que nacieron de esta pasión: OLIMPIADAS BIBLICAS, OLIMPIADAS BIBLICAS EXTREMAS, LA GRAN FINAL, LA BANDA, EDITORIAL , JUEGOS CRISTIANOS BERDOR, entre otros en desarrollo.</p>
+</div>
+<div class="row">
+  <div class="col-sm-6 col-md-4" ng-if="vm.organization" ng-repeat="org in vm.organization">
+    <div class="thumbnail">
+      <div class="caption">
+        <h3>{{org.title}}</h3>
+        <p>{{org.desc}}</p>
+      </div>
+    </div>
+  </div>
 </div>

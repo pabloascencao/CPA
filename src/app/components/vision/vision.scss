@@ -1,6 +1,6 @@
 .vision-wrapper{
   width: 1024px;
-  margin: 0 auto;
+  margin: 0 auto 60px;
   .title-wrapper{
     margin: 20px 0;
   }
@@ -13,5 +13,11 @@
   }
   div.panel{
     padding: 0;
+  }
+  .thumbnail{
+    h3{
+      margin-top: 0;
+
+    }
   }
 }
