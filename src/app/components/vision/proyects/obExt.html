@@ -1,13 +1,23 @@
-<div class="panel panel-default">
-  <div class="panel-heading">
-    Nacimos Así
+<div class="row">
+  <div class="panel panel-default col-md-7">
+    <div class="panel-heading">
+      Nacimos Así
+    </div>
+    <div class="panel-body">
+      <p>Nacimos Argentina viendo la necesidad de dar continuidad al trabajo ya realizado por años con los pre adolescentes.
+        De la misma manera que con los pre, vimos la necesidad de memorizar y aprender la Palabra de Dios en nuestrosadolescentes.
+      </p>
+      <p>Asi comenzamos un trabajo específico en la realización de un único evento anual que reúne a cientos de adolescentes de todo el país. Este entrenamiento interdenominacional fomenta el aprendizaje y la memorización de la Palabra de Dios atreves del juego.</p>
+      <p>Los resultados obtenidos todos cada año nos demuestran que las Olimpíadas Bíblicas constituyen  una herramienta inteligente y creativa para que maestros, líderes y padres trabajen de una manera creativa  en la enseñanza de la Biblia.</p>
+      <p>Nuestra meta  es seguir expandiéndonos y levantar una generación que ame y atesore la Palabra de Dios (Oseas 4.6 RVR 95), una generación que este preparada para responder: ESCRITO ESTA…</p>
+    </div>
   </div>
-  <div class="panel-body">
-    <p>Nacimos Argentina viendo la necesidad de dar continuidad al trabajo ya realizado por años con los pre adolescentes.
-      De la misma manera que con los pre, vimos la necesidad de memorizar y aprender la Palabra de Dios en nuestrosadolescentes.
-    </p>
-    <p>Asi comenzamos un trabajo específico en la realización de un único evento anual que reúne a cientos de adolescentes de todo el país. Este entrenamiento interdenominacional fomenta el aprendizaje y la memorización de la Palabra de Dios atreves del juego.</p>
-    <p>Los resultados obtenidos todos cada año nos demuestran que las Olimpíadas Bíblicas constituyen  una herramienta inteligente y creativa para que maestros, líderes y padres trabajen de una manera creativa  en la enseñanza de la Biblia.</p>
-    <p>Nuestra meta  es seguir expandiéndonos y levantar una generación que ame y atesore la Palabra de Dios (Oseas 4.6 RVR 95), una generación que este preparada para responder: ESCRITO ESTA…</p>
-  </div>
+  <div class="col-md-4  col-md-offset-1" style="height: 305px">
+   <div uib-carousel active="active" interval="2000" no-wrap="true">
+     <div uib-slide ng-repeat="slide in vm.images track by $index | limitTo: 15" index="$index">
+       <img ng-src="{{slide.images[0].source}}" style="margin:auto;">
+
+     </div>
+   </div>
+ </div>
 </div>

@@ -3,11 +3,13 @@
 
   angular
     .module('cpa', [
+      'ui.bootstrap',
       'ngCookies',
       'ngTouch',
       'ngSanitize',
       'ngMessages',
       'ngAria',
+      'ngAnimate',
       'ngResource',
       'ui.router',
       'ngMaterial',
